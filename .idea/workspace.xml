@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b47d7f05-f1f0-45de-bfad-2c0988a7c46f" name="Changes" comment="v1.001 cnp">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fcu/web/GraphApp.java" afterDir="false" />
+    <list default="true" id="b47d7f05-f1f0-45de-bfad-2c0988a7c46f" name="Changes" comment="v1.001 add graph indicate cnp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fcu/web/GraphApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fcu/web/GraphApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723513283238</updated>
-      <workItem from="1723513284363" duration="1421000" />
+      <workItem from="1723513284363" duration="2627000" />
     </task>
     <task id="LOCAL-00001" summary="v1.001 cnp">
       <option name="closed" value="true" />
@@ -105,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723513653569</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v1.001 add graph indicate cnp">
+      <option name="closed" value="true" />
+      <created>1723516928129</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723516928129</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v1.001 cnp" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.001 cnp" />
+    <MESSAGE value="v1.001 add graph indicate cnp" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.001 add graph indicate cnp" />
   </component>
 </project>
