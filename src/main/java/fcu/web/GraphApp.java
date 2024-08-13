@@ -14,6 +14,7 @@ public class GraphApp extends JFrame {
     private ArrayList<int[]> edges = new ArrayList<>();
     private ArrayList<Integer> searchPath = new ArrayList<>();
     private boolean isDFS = false;
+    private long executionTime;
 
     public GraphApp() {
         setTitle("Graph Application");
@@ -94,11 +95,14 @@ public class GraphApp extends JFrame {
             }
 
             searchPath.clear();
+            long startTime = System.nanoTime();
             if (isDFS) {
                 dfs(startNode, new boolean[nodes.size()]);
             } else {
                 bfs(startNode);
             }
+            long endTime = System.nanoTime();
+            executionTime = endTime - startTime;
             graphPanel.repaint();
         } catch (IllegalArgumentException ex) {
             JOptionPane.showMessageDialog(this, "Please enter a valid start node.");
@@ -175,11 +179,14 @@ public class GraphApp extends JFrame {
             g2d.drawString(Integer.toString(i), node.x - 5, node.y + 5);
         }
 
-        // Draw search type
+        // Draw search type and execution time
         if (!searchPath.isEmpty()) {
             g2d.setColor(Color.BLACK);
-            g2d.setFont(new Font("Arial", Font.BOLD, 20));
-            g2d.drawString(isDFS ? "DFS Path" : "BFS Path", 10, 30);
+            g2d.setFont(new Font("Arial", Font.BOLD, 16));
+            String searchType = isDFS ? "DFS" : "BFS";
+            String timeInfo = String.format("%s Path (Execution time: %.3f ms)",
+                    searchType, executionTime / 1_000_000.0);
+            g2d.drawString(timeInfo, 10, 30);
         }
     }
 
